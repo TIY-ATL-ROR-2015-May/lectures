@@ -4,7 +4,7 @@
 # If it's divisible by 15, print FizzBuzz.
 # Otherwise, print the number.
 
-def fizz_buzz(n)
+def fizzbuzz(n)
   1.upto(n) do |i|
     if i % 15 == 0
       puts "FizzBuzz"
@@ -27,5 +27,5 @@ def fancy_fizzbuzz(n)
   end
 end
 
-# fizz_buzz(100)
+# fizzbuzz(100)
 fancy_fizzbuzz(15)
