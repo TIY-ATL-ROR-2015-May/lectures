@@ -30,9 +30,11 @@
    key and value lengths as arguments.
 
    It should print something like the following:
-   +---------+-------+
-   |   Key   | Value |
-   +---------+-------+
+
+   `+---------+-------+
+    |   Key   | Value |
+    +---------+-------+`
+
    You should replace the first call to print_dashes with a call to print_header.
 
 ## BONUS!
