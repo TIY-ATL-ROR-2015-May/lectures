@@ -15,6 +15,12 @@
 
    * Hint 1: Use a Hash Table!
 
+   Example/Test Case:
+   * `encode(my_alpha, "dog")` => `"delta omega gamma"`
+   * `decode(my_alpha, "delta omega gamma")` => `"dog"`
+   * `encode(my_alpha, "i am 24 years old")` =>
+     `"india alpha mike 24 yankee echo alpha romeo sierra oscar lima delta"`
+
 2. Pull up the Ruby Docs for the Hash class and read a few methods.
    Pick the one you were most interested in and try to explain what
    it does as clearly as possible.
