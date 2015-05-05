@@ -56,13 +56,18 @@ def print_line(key, value, max_k, max_v)
   puts "| #{key.center(max_k)} | #{value.center(max_v)} |"
 end
 
+def print_kv_pairs(hash, max_k, max_v)
+  hash.each do |key, value|
+    print_line(key.to_s, value.to_s, max_k, max_v)
+  end
+end
+
 def print_hash(hash)
   longest_key = max_length(hash.keys)
   longest_val = max_length(hash.values)
+
   print_dashes(longest_key, longest_val)
-  hash.each do |key, value|
-    print_line(key.to_s, value.to_s, longest_key, longest_val)
-  end
+  print_kv_pairs(hash, longest_key, longest_val)
   print_dashes(longest_key, longest_val)
 end
 
