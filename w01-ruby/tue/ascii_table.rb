@@ -56,10 +56,30 @@ def print_line(key, value, max_k, max_v)
   puts "| #{key.center(max_k)} | #{value.center(max_v)} |"
 end
 
+## What is a Block? What is it for?
+## Sometimes we want a function that doesn't have a name.
+## Sometimes we want to pass as an argument, as data.
+
+# foo = [1, 2, 3, 4, 5]
+# result = foo.map { |x| x * 20 }
+
+## Alternately ...
+#result = []
+#def multiplier(x)
+#  x * 20
+#end
+
+#for i in foo do
+#  result << multiplier(i)
+#end
+
 def print_kv_pairs(hash, max_k, max_v)
+  puts key # out of scope
   hash.each do |key, value|
     print_line(key.to_s, value.to_s, max_k, max_v)
+    puts key # in scope!
   end
+  puts key # out of scope
 end
 
 def print_hash(hash)
