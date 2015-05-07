@@ -19,7 +19,9 @@ You may also see a warning on recent git versions about using **matching** or **
 ## Managing Local Repo / Changes
 
 **Tracked**: A file that git pays attention to. No data is kept about untracked files.
+
 **Staged**: Something that will be recorded the next time you run git commit.
+
 **Unstaged**: Changes that have been made to your tracked files but will not be recorded in the next commit.
 
 * `git status` to examine all local changes whether "staged" or "unstaged".
