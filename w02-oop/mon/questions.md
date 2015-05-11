@@ -13,7 +13,7 @@ I.e. `map` is the following pattern:
 ```
 def my_map(array)
   result = []
-  enum.each do |el|
+  array.each do |el|
     result << yield(el)
   end
   result
