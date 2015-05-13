@@ -1,6 +1,3 @@
-module BlockThings
-end
-
 class File
   def open(path, mode)
     fd = some_OS_call(path, mode)
