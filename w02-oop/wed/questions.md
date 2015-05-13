@@ -10,6 +10,8 @@ Your homework is to add a Deck class in
 the IronYardGames module. Here are some
 requirements for the Deck class:
 
+**Easy Mode:**
+
 * Creating a deck with `Deck.new` should
   return a deck object containing the 52
   cards found in a standard card deck.
@@ -19,11 +21,6 @@ requirements for the Deck class:
   takes a number of cards to draw, removes
   those cards from the Deck and returns
   them as an array.
-
-* Decks should implement the Enumerable
-  interface. This means you will need to
-  implement the `each` method on your Deck
-  as specified in the Enumerable docs.
 
 * There should be a `peek` method to look
   at the top card of the deck without
@@ -39,6 +36,13 @@ requirements for the Deck class:
   deck.shuffle
   deck.peek
   ```
+
+**Normal Mode:**
+* Decks should implement the Enumerable
+  interface. This means you will need to
+  implement the `each` method on your Deck
+  as specified in the Enumerable docs.
+
 
 **HARD MODE**:
 
