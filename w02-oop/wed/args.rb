@@ -41,37 +41,6 @@ class Card
   end
 end
 
-class Deck
-  include Enumerable
-
-  # Two ways to `each` on your class
-  #
-  # 1. Expose the Enumerable thing with an attr_reader, interact with it directly
-  #    attr_reader :cards
-  #    deck = Deck.new
-  #    deck.cards.each { |c| blah blah blah }
-  #
-  # 2. Define an each method that talks to the Enumerable thing
-  #    deck = Deck.new
-  #    deck.each { |c| blah blah blah }
-  #
-  # When possible, the second is preferred.
-  # More "ruby-ish", hides/encapsulates implementation better!
-
-  def initialize
-    @cards = []
-    Card::RANKS.each do |rank|
-      Card::SUITS.each do |suit|
-        @cards << Card.new(rank, suit)
-      end
-    end
-  end
-
-  def each
-    @cards.each { |card| yield card }
-  end
-end
-
 class KeywordCard
   def initialize(opts={})
     puts "The opts hash contains: #{opts}"
