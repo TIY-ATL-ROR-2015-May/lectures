@@ -10,7 +10,7 @@ module IronYardGames
 
   # attr_reader :rank
   # attr_writer :rank
-  attr_accessor :rank, :suit
+  attr_reader :rank, :suit
   include Comparable
 
   def initialize(rank=nil, suit=nil)
@@ -44,5 +44,3 @@ module IronYardGames
   # end
   end
 end
-
-binding.pry
