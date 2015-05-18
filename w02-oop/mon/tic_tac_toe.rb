@@ -73,4 +73,4 @@ def tic_tac_toe
   puts "Game Over!"
 end
 
-binding.pry
+tic_tac_toe

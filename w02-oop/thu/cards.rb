@@ -19,6 +19,10 @@ module IronYardGames
       @suit = suit || SUITS.sample
     end
 
+    def to_s
+      "The #{@rank} of #{@suit}"
+    end
+
     protected
     def value
       val = RANK_VALUES[self.rank]
