@@ -9,6 +9,9 @@ Note that you'll need to run `rake db:migrate` in your clone to get
 the database setup. To run the game just use `ruby lib/guessr.rb`
 from the root of your repository.
 
+**ADDENDUM**: We endured some migration bugs and git remote
+shenanigans in the course of getting our forks set up. Hooray for learning!
+
 ## Normal Mode
 
 There are 2 enhancements to make to guessr:
@@ -21,11 +24,15 @@ There are 2 enhancements to make to guessr:
    Note that the user's score is cumulative across games
    so it should never decrease, only increase.
 
+   This code should probably go in the `turn` method in `lib/guessr.rb`.
+
 2. Add a scoreboard method to the Menu class and allow
    the user to select displaying the scoreboard when they "login".
    The scoreboard should rank the users from highest score to lowest.
    Reading the [ActiveRecord Querying guide][querying] may prove helpful.
    In particular, chapters 1-5 and 19 are worth a look.
+
+   This code should probably go in the `Menu` class in `lib/guessr/menu.rb`.
 
 Additionally, reading the first chapter and the belongs_to, has_one,
 and has_many sections of the [ActiveRecord associations guide][associations]
