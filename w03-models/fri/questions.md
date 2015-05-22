@@ -46,9 +46,15 @@ First, four important notes:
      * a due date,
      * some sort of completed/finished/done column.
 
+   Remember you have access to the [ActiveRecord Migrations guide][migrations] to help you!
+
+[migrations]: guides.rubyonrails.org/active_record_migrations.html
+
 2. Once the tables and (empty) models are in place, you'll want to define any needed    associations on the models like `has_one`, `has_many`, `belongs_to`, etc.
    Remember to think about 1-to-1, 1-to-many, many-to-many!
    (Hint: There is no need for many-to-many relationships in Normal mode.)
+
+   Remember you have access to the [ActiveRecord Associations guide][associations] to help you!
 
 3. User functionality:
    * You can login with your name, a new user is created if one does not already exist.
