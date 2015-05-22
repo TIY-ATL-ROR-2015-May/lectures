@@ -48,7 +48,7 @@ First, four important notes:
 
    Remember you have access to the [ActiveRecord Migrations guide][migrations] to help you!
 
-[migrations]: guides.rubyonrails.org/active_record_migrations.html
+[migrations]: http://guides.rubyonrails.org/active_record_migrations.html
 
 2. Once the tables and (empty) models are in place, you'll want to define any needed    associations on the models like `has_one`, `has_many`, `belongs_to`, etc.
    Remember to think about 1-to-1, 1-to-many, many-to-many!
