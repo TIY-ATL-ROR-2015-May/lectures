@@ -1,4 +1,4 @@
-# github-stats
+# commit-champ
 
 ## Description
 
