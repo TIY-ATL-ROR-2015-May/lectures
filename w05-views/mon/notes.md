@@ -36,5 +36,35 @@
 * [Ports][ports]
 
 * A server is just a thing that listens for requests.
+* A controller is a set of methods that answer specific requests.
+* The application router determines which controller/method go with which request.
+
+* Ultimately, it is the controller's job to receive a request,
+  do any work needed talking to the database or models,
+  and build a response to send back as HTML or JSON.
 
 [ports]: http://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers
+
+## Sinatra and Miscellany
+
+Sinatra is a bit weird:
+
+* It makes some hard (like answering web requests) easy
+  but makes simple things (like what methods are in scope)
+  a bit hard. So we're still not sure how to compartmentalize
+  our code.
+
+* That said, it's very easy to define a route, just write:
+  `get '/hi' do ... end` to define a simple static route.
+
+  To build a route that responds to multiple URLs, just write:
+  `get '/hello/:name' do ... end` and whatever URL matches this
+  pattern will go to the route. Inside the route's block,
+  the variable `params` will be a hash that contains the parameters
+  from the user.
+
+* As long as the thing we return from a route is some kind of string
+  (like HTML or JSON) everything works just fine.
+
+* Note that until I set `RACK_ENV=production` when running `ruby lib/jukeberx.rb`
+  other users cannot connect to the server. It only runs on localhost.
