@@ -60,4 +60,6 @@ Build a metronome loop in the server, and make sure triggered samples happen on 
 ## Additional Resources
 
 * [Watch this](https://www.youtube.com/watch?v=gAjR4_CbPpQ)
-* [samples](http://redlinernotes.com/docs/daft-samples.zip)
+* [samples][samples]
+
+[samples]: http://redlinernotes.com/docs/daft-samples.zip
