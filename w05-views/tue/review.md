@@ -36,9 +36,9 @@ New Stuff we learned today:
    apps but you might not necessarily want to. Wasn't that great.
 
 4. We were reminded that you can get your IP address by running
-   `ifconfig` and looking for the `inet` part of the `en0` entry
-   and that we can make a server visible to others by setting
-   `RACK_ENV=production`.
+   `ifconfig` and looking for the `inet` part of the `en0` or
+   `en1` entry and that we can make a server visible to others
+   by setting `RACK_ENV=production`.
 
 5. Saw exceptions with `begin` / `rescue` for the first time.
    ... But we'll see those more with Rails next week and they
