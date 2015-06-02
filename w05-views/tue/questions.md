@@ -28,33 +28,55 @@ After completing this assignment, you be able to effectively use
 
 ### Deliverables
 
-* A repo containing at least:
-  * `daft.rb`
-  * `rock.rb`
+Don't fork until tomorrow! Just run:
+      `git clone git://github.com/TIY-ATL-ROR-2015-May/samplserv.git`
+tonight, run the server, and experiment!
+
+Add new methods, change existing methods, try to write new API bindings
+in the client, etc.
+
+The deliverable for *your team* due Thursday morning is:
+
+* A fork of samplserv with modifications to 'samplserv.rb' and 'client.rb'
 
 ### Requirements
 
-* Running `daft.rb` should start a server with endpoints described below
-* Running `rock.rb` should make requests to that server to play a "song"
+Server:
+* Running `RACK_ENV=production bundle exec ruby lib/samplserv.rb` should
+  start a server with endpoints described below
+
+* Running `ruby lib/client.rb` should start the client which will
+  play something resembling a song by sending requests to the server! 
+
+### Notes
+
+1. You will need two terminals to do this assignment.
+   One to run the client and one to run the server.
 
 
 ## Normal Mode
 
-Download the samples from [here][samples]. Make an endpoint (API call)
-         for each family, with query params for multiple versions: e.g.
+Feel free to download the samples from [here][samples]. They're already
+included in the project repo though.
+
+Make an endpoint (API call) for each "phrase",
+with query params for multiple versions: e.g.
 
 * `POST /harder`
 * `POST /better?v=2`
 
-The `rock.rb` script should play several samples in the style and timing of your choosing.
+The `client.rb` script should play several samples
+in the style and timing of your choosing.
 
 ## Hard Mode
 
-Use `sleep` judiciously to play a reasonable cover with a backtrack (see `beat.mp3`)
+Use `sleep` judiciously to play a reasonable cover with a backtrack
+(see `beat.mp3`)
 
 ## Nightmare Mode
 
-Build a metronome loop in the server, and make sure triggered samples happen on the next beat.
+Build a metronome loop in the server, and make sure requested
+samples happen on the next beat.
 
 
 ## Additional Resources
