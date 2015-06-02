@@ -68,3 +68,15 @@ Sinatra is a bit weird:
 
 * Note that until I set `RACK_ENV=production` when running `ruby lib/jukeberx.rb`
   other users cannot connect to the server. It only runs on localhost.
+
+## Extra Resources
+
+Interesting Sinatra reading I've dug up other than the docs is as follows:
+
+* This [blog entry][sinatra_apps] on structuring sinatra apps and
+  this [Sinatra app code][monocle] by it's author.
+* This [article][mod_v_classic] from the Sinatra site on Modular vs Classic style.
+
+[sinatra_apps]: http://blog.sourcing.io/structuring-sinatra
+[monocle]: https://github.com/maccman/monocle
+[mod_v_classic]: http://www.sinatrarb.com/intro.html#Modular%20vs. bb20Classic%20Style
