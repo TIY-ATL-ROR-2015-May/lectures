@@ -14,11 +14,18 @@ more background on branching and merging:
 Git is a tool that supports various different workflows.
 [Understanding Github Flow][understanding-github-flow] will introduce
 you to some basic ideas about how we work with branches and merging.
-It's a broad overview and that's what is key for you to understand at this time.
+
+It's a broad overview of a production workflow with branches
+and that's what is key for you to understand at this time.
+
+If you want a truly deep dive on how branches and remotes actually *work*
+the best resource I know of is the article [Git from the Inside Out][gftio]
+by the amazing Mary Rose Cook.
 
 Github Flow is a popular way of using git and there is a more in-depth
 discussion of Github Flow [here][github-flow] in case you want more background.
 
+[gftio]: http://maryrosecook.com/blog/post/git-from-the-inside-out
 [understanding-github-flow]: https://guides.github.com/introduction/flow/index.html
 [github-flow]: http://scottchacon.com/2011/08/31/github-flow.html
 
