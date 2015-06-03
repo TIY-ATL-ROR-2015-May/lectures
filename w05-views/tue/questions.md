@@ -6,6 +6,22 @@ Make a basic sampler / sequencer with Sinatra
 
 This will be our first group project! It is due before class on June the 4th.
 
+## Git Prerequisites
+
+I would recommend you at least skim the following to get some
+more background on branching and merging:
+
+Git is a tool that supports various different workflows.
+[Understanding Github Flow][understanding-github-flow] will introduce
+you to some basic ideas about how we work with branches and merging.
+It's a broad overview and that's what is key for you to understand at this time.
+
+Github Flow is a popular way of using git and there is a more in-depth
+discussion of Github Flow [here][github-flow] in case you want more background.
+
+[understanding-github-flow]: https://guides.github.com/introduction/flow/index.html
+[github-flow]: http://scottchacon.com/2011/08/31/github-flow.html
+
 ## Objectives
 
 ### Learning Objectives
