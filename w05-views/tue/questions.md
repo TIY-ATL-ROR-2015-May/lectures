@@ -1,4 +1,4 @@
-# harder-better
+# samplserv / samplparty
 
 ## Description
 
@@ -53,6 +53,10 @@ Server:
 1. You will need two terminals to do this assignment.
    One to run the client and one to run the server.
 
+2. You can stop the server by typing `Control-C Control-C`.
+
+3. When you make changes to the server, you will need to
+   restart the server (but not the client!) for them to take effect.
 
 ## Normal Mode
 
