@@ -34,6 +34,7 @@ see a page as close to the [etsy search][esty-search] page as possible.
 4. Each item should link to its Etsy page.
 
 **NOTES**:
+
     * Do **NOT** use a CSS Framework such as Twitter Bootstrap or Zerb Foundation or Materialize. We'll do that next week. ;)
     * Worry about the *structure* and *layout* first, then the fine **styling**.
     * You are free to use whatever search term you like in testing. `whiskey` just has some nice results.
