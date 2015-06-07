@@ -43,13 +43,11 @@
     * Method Dispatch & Ancestors
       * `Foo.ancestors` returns an array of Classes and Modules that `Foo` "Inherits" from.
         (Can be done on an instance of a class with `instance.class.ancestors`.)
+
       * Example:
         Say we have an object which is an instance of the board class. E.g. `board = Board.new`
-
         When we make a method call, a message is being sent to that object. E.g. `board.legal_move?(5)`
-
         The object looks for a matching method definition and calls the first one it finds,
-
         starting with its defining class and proceeding up the list of ancestors.
   * Classes
     * Definition: `class Board ... (methods) ... end`
