@@ -304,18 +304,28 @@
 
 ### Detailed Review
 
-  * HTTParty - Used to make HTTP requests with Ruby.
-    * Generally included in a class for the API you want to talk to.
-      * Example: `class Github ... include HTTParty ... (methods) ... end`
+* HTTParty - Used to make HTTP requests with Ruby.
+  * Generally included in a class for the API you want to talk to.
+    * Example: `class Github ... include HTTParty ... (methods) ... end`
 
-      * Adds several class methods that can be used to send a request: `get`, `post`, `put`, `delete`, etc.
-      * Example: `def get_user(username) ... self.class.get("/users/#{username}") ... end`
+    * Adds several class methods that can be used to send a request: `get`, `post`, `put`, `delete`, etc.
+    * Example: `def get_user(username) ... self.class.get("/users/#{username}") ... end`
 
-      * Can also specify the `base_uri` for the class so you don't have to type "api.foo.com" all the time.
-      * All requests methods (get, post, put, delete, etc) take several optional parameters passed as key value pairs:
-        * `headers:` which may specify a hash of request headers.
-        * `body:` which may specify a hash of params to be sent in the body of the request, aka postdata.
-        * `query:` which may specify a hash of params to use as a querystring.
+    * Can also specify the `base_uri` for the class so you don't have to type "api.foo.com" all the time.
+    * All requests methods (get, post, put, delete, etc) take several optional parameters passed as key value pairs:
+      * `headers:` which may specify a hash of request headers.
+      * `body:` which may specify a hash of params to be sent in the body of the request, aka postdata.
+      * `query:` which may specify a hash of params to use as a querystring.
+
+* OAuth - What is it for? How does it work?
+  * Intended to replace the need for users to give their username and password to other sites for e.g. Facebook apps.
+  * Better in two ways:
+    1. Don't have to give out your username and password (which probably is used for more than one account).
+    2. Access can be granted in a more granular fashion so "apps" only have certain permissions.
+  * Complications?
+    * Mostly in figuring out which of many potential OAuth "flows" is appropriate.
+  * End goal: Get an "access token" that can be refreshed if it expires, store it permanently.
+    * Make sure to specify any specific 'Scopes' (aka access rights) your program needs to the user's account.
 
 ### Projects
 
@@ -338,6 +348,7 @@
   * Views
   * Template Language
   * HTML/CSS
+  * Exceptions / Begin / Rescue
 
 ### Projects
 
