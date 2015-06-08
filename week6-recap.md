@@ -112,6 +112,9 @@
 ### Detailed Review
 
 * Classes: Data and Scope
+  * **Classes and Modules are ALWAYS accessible.**
+    * Though they may need to be referred to via their namespace
+      if you're in a different module or at the "top level". E.g. `IronYardGames::Card`.
   * Initializers: Can define a method called `initialize` that defines any initial data about the object.
   * Instance Variables:
     * Definition: `@height = height`
