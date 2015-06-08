@@ -267,28 +267,39 @@
                   allowing a program to use a web service without human assistance.
     * API(n): A contract to answer certain documented messages in a particular way,
               could be for a plain old class, could be for a library or a server.
+
+  * All requests *and* responses have both headers and a body.
+    * We're usually mostly interested in headers of the response. Headers in a request mostly used for Authentication.
   * Headers
     * Status Code
     * Hostname
-    * All kinds of interesting metadata!
-  * DNS / Domain Names
-  * IP Addresses and Ports - "10.0.0.45:4567" which part is IP, which part is port?
+    * All kinds of interesting metadata! Up to the server what else is in there.
+  * Body
+    * The main content of a request or response.
+    * GET *requests* don't usually have a body. POST *requests* do. All responses other than for deletion normally have a body.
+
+  * DNS / Domain Names - A way to map IP addresses to human readable names. E.g. `google.com`
+  * IP Addresses and Ports - A unique identifier for a communication channel to a specific computer. `10.0.0.45:4567``
+
   * The (main) HTTP Verbs!
     * `GET` - Used to retrieve a resource.        Like Reading from CRUD.
     * `PUT \ PATCH` - Used to change a resource.  Like Update from CRUD.
     * `POST` - Used to make a new resource.       Like Create from CRUD.
     * `DELETE` - Used to delete a resource.       Like Delete from CRUD.
+
   * The (main) Status Codes:
     * 200 - OK.
     * 401 - Unauthorized.
     * 403 - Unauthenticated.
     * 404 - Lulz, couldn't find that.
+
   * The Status Code hierarchy:
     * 1xx - Informational.
     * 2xx - Success.
     * 3xx - Redirect.
     * 4xx - Client messed up.
     * 5xx - Server messed up.
+
   * JSON - JavaScript Object Notation. Just a serialization format for shipping data around universally.
 
 ### Projects
