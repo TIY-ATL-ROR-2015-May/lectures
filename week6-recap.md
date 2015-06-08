@@ -302,6 +302,21 @@
 
   * JSON - JavaScript Object Notation. Just a serialization format for shipping data around universally.
 
+### Detailed Review
+
+  * HTTParty - Used to make HTTP requests with Ruby.
+    * Generally included in a class for the API you want to talk to.
+      * Example: `class Github ... include HTTParty ... (methods) ... end`
+
+      * Adds several class methods that can be used to send a request: `get`, `post`, `put`, `delete`, etc.
+      * Example: `def get_user(username) ... self.class.get("/users/#{username}") ... end`
+
+      * Can also specify the `base_uri` for the class so you don't have to type "api.foo.com" all the time.
+      * All requests methods (get, post, put, delete, etc) take several optional parameters passed as key value pairs:
+        * `headers:` which may specify a hash of request headers.
+        * `body:` which may specify a hash of params to be sent in the body of the request, aka postdata.
+        * `query:` which may specify a hash of params to use as a querystring.
+
 ### Projects
 
   * Tuesday: Curl Experiments!
