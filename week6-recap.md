@@ -14,8 +14,8 @@
   * Conditionals:
     * Standard: If (condition) / Else
     * Multiple Conditions: If (condition-1) / Elsif (condition-2) / etc, optionally Else (default)
-    * Value comparison: Case
     * One-legged: Unless (condition)
+    * Value comparison: [Case](http://ruby-doc.org/docs/keywords/1.9/Object.html#method-i-case)
   * Loops:
     * Numeric loops: times, upto, downto
     * Item loops: each 
@@ -72,21 +72,9 @@
     * Definition: `class Board ... (methods) ... end`
     * Use: `foo = Board.new`. Call methods on foo like: `foo.legal_move?(5)` .
     * Why? To separate concerns and break our programs into *components* that only have to understand a subset of the problem.
-    * Initializers: Can define a method called `initialize` that defines any initial data about the object.
-    * Instance Variables:
-      * Definition: `@height = height`
-      * Use: `@height`
-      * Why? To keep data permanently inside the object and make it in scope to all methods defined on the object.
-    * Self: A contextual way to refer to an object.
-      * Inside a class method: Refers to the class.
-      * Inside a normal (instance) method: Refers to the instance of the class on which the method was called.
-    * attr_reader / attr_writer / attr_accessor:
-      * For granting access to instance variables inside a class.
-      * Each takes a list of symbols to define methods for.
-      * Definition: `class Game ... attr_accessor :board ... attr_reader :player1, :player2 ... end`
-      * Use: `game.board = Board.new`, `player = game.player1`, etc.
 
   * Modules: A mechanism for Namespacing and Mixins.
+
     * Namespacing:
       * A way to isolate the names we use for classes so as not to conflict with other libraries.
         * Example: `octokit` gem for interacting with Github API might define their own User class
@@ -94,6 +82,7 @@
                    classes, they'll put it in the octocat module, e.g. `Octokit::User`.
       * Definition: `module Foo ... (classes) ... end`
       * Use: `toy = Foo::Bar.new`. Call methods on toy!
+
     * Mixins:
       * A way to share common methods among *unrelated* classes that satisfy the Mixin requirements.
         * Example: Comparable module (that grants `<`, `>`, `==`, etc) requires implementing `<=>` method.
@@ -111,18 +100,31 @@
     * Why? To have confidence when making changes to unfamiliar code and to ease maintenace in the long term.
 
   * `require`: Not only to include other libraries but also for our own files!
-  * Regular Expressions: A pattern language for searching in text. `/^[0-9]+$/ =~ gets.chomp`
-    * See: [Rubular](http://rubular.com)
+  * Regular Expressions: A pattern language for searching in text. See: [Rubular](http://rubular.com)
   * Enumerable! When working with Arrays and Hashes, reach for Enumerable *first*.
 
   * Blocks, Procs, and Lambda: Too many kinds of Anonymous Functions
-    * Yield
   * Fancy argument types
     * Optional args: `def initialize(auth_token=nil)`
     * Keyword args: `class Card ... def initialize(rank: nil, suit: nil) ... (more methods) ... end`
     * Var args: `def product(*nums)`
 
 ### Detailed Review
+
+* Classes: Data and Scope
+  * Initializers: Can define a method called `initialize` that defines any initial data about the object.
+  * Instance Variables:
+    * Definition: `@height = height`
+    * Use: `@height`
+    * Why? To keep data permanently inside the object and make it in scope to all methods defined on the object.
+  * Self: A contextual way to refer to an object.
+    * Inside a class method: Refers to the class.
+    * Inside a normal (instance) method: Refers to the instance of the class on which the method was called.
+  * attr_reader / attr_writer / attr_accessor:
+    * For granting access to instance variables inside a class.
+    * Each takes a list of symbols to define methods for.
+    * Definition: `class Game ... attr_accessor :board ... attr_reader :player1, :player2 ... end`
+    * Use: `game.board = Board.new`, `player = game.player1`, etc.
 
 * Method Dispatch!
   * `Foo.ancestors` returns an array of Classes and Modules that `Foo` "Inherits" from.
@@ -200,26 +202,46 @@
 ### Key Concepts
 
   * Database Basics:
-    * Schema(n):
-    * Table(n): 
-    * Migration(n):
+    * Schema(n): The current layout of the database including all tables and their columns.
+    * Table(n): A place in the database to store multiple pieces of data sharing a common structure.
+    * Migration(n): A change to the Schema effecting one or more tables.
     * ORM(n): An Object Relational Mapper. Or, the fancy thing that talks to the database for us.
               In our case, ActiveRecord.
+
   * ActiveRecord Basics:
-    * Models
-    * Querying: CRUD, etc
-      * Create:
-      * Read:
-      * Update:
-      * Delete: 
-    * Associations: 1-to-1, 1-to-many, Many-to-many, Joins et al
-      * `belongs_to`
-      * `has_many`
-      * `has_many through`
+    * Migrations: A class that subclasses `ActiveRecord::Migration` and has up and down methods or a change method.
+    * Models: A class that subclasses `ActiveRecord::Base`.
+      * Definition: `class User < ActiveRecord::Base`
+      * Use (with a specific instance): `user.email = "foo@bar.com"`, `user.save`, `user.games`, etc
+      * Use (to query the whole table): `User.where(name: ["brit", "sherri", "rickard"])`
+
+    * Basic Querying: CRUD, etc. Examples for `class User < ActiveRecord::Base`
+      * Create: `user = User.create(name: "brit", occupation: "instructor")`
+      * Read:   `users = User.where(occupation: "instructor")` or `user = User.find_by(name: "brit")`.
+      * Update: `user.update(age: 28)`
+      * Delete: `user.destroy`
+
+      * Note that most query operations can be chained!
+      * For more querying, including important methods like `limit`, `offset`, `order`, `group`, `count`, etc
+        refer to the [ActiveRecord guide][querying].
+
+    * Associations: 1-to-1, 1-to-many, Many-to-many
+      * Allows us to define a connection between tables.
+      * Any associations we define rely on aspects of the database schema, specifically the location of Foreign Keys!
+      * `belongs_to :player`
+      * `has_many :games`
+      * `has_many :tags, through: :post_tags`
+
+    * Joins: A type of query involving data from more than one table.
+
+[querying]: guides.rubyonrails.org/active_record_querying.html
 
 ### Ancillary Concepts
 
-  * Bundler, Gems/Libraries
+  * Gems (aka Libraries)
+    * A way for us to reuse substantial functionality/code already written by others!
+  * Bundler
+    * A tool to manage the specific gem versions needed from project to project and keep them out of conflict.
 
 ### Projects
 
