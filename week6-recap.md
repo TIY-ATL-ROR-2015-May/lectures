@@ -5,19 +5,45 @@
   * Data Types: Booleans, Fixnums (Integers), Floats, Strings, Symbols
   * Compound Data Types: Arrays, Hashes, Sets
   * Local Variables & Assignment
+    * Definition: `nums = [1, 2, 3, 4]`
+    * Use: `puts nums`
+    * Assignment replaces the original definition with a new one. It looks identical to defining the variable.
+  * Constants
+    * Definition: `PI = 3.14159`
+    * Use: `PI * (radius ** 2)`
   * Conditionals:
-    * Standard: If / Else
-    * Multiple Conditions: If condition-1 / Elsif condition-2 / etc, optionally Else (default)
+    * Standard: If (condition) / Else
+    * Multiple Conditions: If (condition-1) / Elsif (condition-2) / etc, optionally Else (default)
     * Value comparison: Case
-    * One-legged: Unless
+    * One-legged: Unless (condition)
   * Loops:
     * Numeric loops: times, upto, downto
-    * Item loops: each
-    * Conditional loops: while, until
+    * Item loops: each 
+    * Conditional loops: while (condition), until (condition)
   * I/O: puts, gets
   * Functions!
     * Definition: `def foo(x) ... end`
     * Use: `foo(42)`
+    * Why? To reuse a piece of functionality in multiple places.
+
+### Detailed Review
+
+* Functions Arguments & Scope
+  * Functions create a "new scope" meaning that no local variables defined outside the function
+    are available inside it. For data to be available in a function, we must pass that data
+    to the function as an argument, which makes it visible as if it had been defined in a
+    local variable inside the function.
+
+    Constants are in scope inside functions but we use them sparingly. Programs are principally about
+    working with data that changes, not data that is *constant*.
+
+* Compound Data Types
+  * Compound Data Types can hold data of any kind. We choose which one to use based on how we wish to
+    interact with our data. For example, Arrays are used for data that is in a specific order, or if
+    it makes sense to refer to items by their *position*. Hashes are used for data that should be referred
+    to or accessed by its *name* and are generally not relied on for ordering, though items in Ruby
+    hashes are ordered by the order in which items were inserted. Sets are used for data that must
+    *not have duplicates* and for which order does not matter.
 
 ### Projects
 
@@ -36,22 +62,30 @@
 
 ### Key Concepts
 
-  * Everything is an Object. Every Object is an instance of a class.
+  * Everything in Ruby is an Object. Every Object is an instance of a class.
     * Call `obj.class` on any object to get its class!
-    * Object(n): A value of a certain data type (aka Class)
-                 guaranteed to understand certain messages (aka methods).
-    * Method Dispatch & Ancestors
-      * `Foo.ancestors` returns an array of Classes and Modules that `Foo` "Inherits" from.
-        (Can be done on an instance of a class with `instance.class.ancestors`.)
+    * Object(n):
+      * A value of a certain data type (aka Class) guaranteed to understand certain messages (aka methods).
+    * Method Dispatch!
 
-      * Example:
-        Say we have an object which is an instance of the board class. E.g. `board = Board.new`
-        When we make a method call, a message is being sent to that object. E.g. `board.legal_move?(5)`
-        The object looks for a matching method definition and calls the first one it finds,
-        starting with its defining class and proceeding up the list of ancestors.
   * Classes
     * Definition: `class Board ... (methods) ... end`
     * Use: `foo = Board.new`. Call methods on foo like: `foo.legal_move?(5)` .
+    * Why? To separate concerns and break our programs into *components* that only have to understand a subset of the problem.
+    * Initializers: Can define a method called `initialize` that defines any initial data about the object.
+    * Instance Variables:
+      * Definition: `@height = height`
+      * Use: `@height`
+      * Why? To keep data permanently inside the object and make it in scope to all methods defined on the object.
+    * Self: A contextual way to refer to an object.
+      * Inside a class method: Refers to the class.
+      * Inside a normal (instance) method: Refers to the instance of the class on which the method was called.
+    * attr_reader / attr_writer / attr_accessor:
+      * For granting access to instance variables inside a class.
+      * Each takes a list of symbols to define methods for.
+      * Definition: `class Game ... attr_accessor :board ... attr_reader :player1, :player2 ... end`
+      * Use: `game.board = Board.new`, `player = game.player1`, etc.
+
   * Modules: A mechanism for Namespacing and Mixins.
     * Namespacing:
       * A way to isolate the names we use for classes so as not to conflict with other libraries.
@@ -73,16 +107,80 @@
 
   * Testing
     * Unit Testing: A test for a small part of your program, generally just a single method in a class.
-    * TDD: Writing tests for a feature or bug *first* before any other code. 
+    * TDD: Writing tests for a feature or bug *first* before any other code.
+    * Why? To have confidence when making changes to unfamiliar code and to ease maintenace in the long term.
+
   * `require`: Not only to include other libraries but also for our own files!
   * Regular Expressions: A pattern language for searching in text. `/^[0-9]+$/ =~ gets.chomp`
+    * See: [Rubular](http://rubular.com)
   * Enumerable! When working with Arrays and Hashes, reach for Enumerable *first*.
+
   * Blocks, Procs, and Lambda: Too many kinds of Anonymous Functions
     * Yield
   * Fancy argument types
     * Optional args: `def initialize(auth_token=nil)`
     * Keyword args: `class Card ... def initialize(rank: nil, suit: nil) ... (more methods) ... end`
     * Var args: `def product(*nums)`
+
+### Detailed Review
+
+* Method Dispatch!
+  * `Foo.ancestors` returns an array of Classes and Modules that `Foo` "Inherits" from.
+     (Can be done on an instance of a class with `instance.class.ancestors`.)
+
+   * Example:
+     Say we have an object which is an instance of the board class. E.g. `board = Board.new`
+
+     When we make a method call, a message is being sent to that object. E.g. `board.legal_move?(5)`
+
+     The object looks for a matching method definition and calls the first one it finds,
+
+     starting with its defining class and proceeding along the list of ancestors.
+
+* Blocks, Procs, Lambda
+  * Blocks, Procs, and Lambdas are all kinds of anonymous functions, that is functions without a name.
+  * The interesting thing about this is that we can pass them as *arguments* to other, more general, functions.
+  * In some sense, they allow us to treat functions as a piece of data!
+
+  * E.g. There are many many times we'd like to go through a list and retrieve data matching some rule.
+
+    We shouldn't have to hand write a loop for this every time. We should be able to lean on a general technique.
+
+    We achieve this with Enumerable objects by "leaning on" the `select` method and passing it
+    a "block" which handles the "specific behavior" the data should adhere to.
+
+    * Example: `[1,2,3,4].select {|x| x.even? }`
+      * Equivalent to:
+
+        ```
+        [1,2,3,4].select do |x|
+          x.even?
+        end
+        ```
+
+      * The terser style is generally preferred where it does not make the code to hard to read or cram too much onto one line.
+
+      * There is even a shortcut for the common case of simply calling a method on each object: `[1,2,3,4].select(&:even?)`
+
+  * Blocks are pervasive in Ruby code!
+  * Curiously though I said blocks were like "functions as a piece of data",
+    they cannot be saved as variables and so they don't seem like "real" objects.
+
+    Again, you can't save a block into a variable, you can just pass it to other functions/methods.
+  * Procs and Lambdas, on the other hand, *can* be saved as local variables.
+    * Example: `square = lambda {|x| x * x }`
+    * Usage: `square.call(8)`
+
+  * Procs and Lambdas differ in how minor details of scoping and how they handle statements like `break` and `return`.
+  * As a result, code that relies heavily on how Proc and Lambda work is brittle, hard to read, and hard to maintain.
+    * Procs and Lambdas are thus not seen terribly often in Ruby code.
+
+  * Yield
+    * It turns out all methods implicitly take a block as an argument in Ruby but aren't required to do anything with it.
+      * E.g. `puts "hello there!" { |x| x * 2 }` is valid code and will not crash but the block is ignored and doesn't run.
+    * So any method that wants to take a block as an argument can:
+      * Check if a block has been passed in like so: `block_given?`
+      * Run the block (optionally passing it arguments) with yield: `yield(x)`
 
 ### Projects
 
