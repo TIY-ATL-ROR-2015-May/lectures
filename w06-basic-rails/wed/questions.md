@@ -74,11 +74,6 @@ Normal mode is a simple, naive, implementation of Reddit without voting support.
 
 [threaded]: http://en.wikipedia.org/wiki/Conversation_threading
 
-## Notes
-
-* To launch on heroku, you'll need the [Heroku Toolbelt](https://toolbelt.heroku.com/)
-  and a [Heroku Account](https://signup.heroku.com/login)
-
 ## Additional Resources
 
 * Read [Active Record Querying](http://guides.rubyonrails.org/active_record_querying.html)
