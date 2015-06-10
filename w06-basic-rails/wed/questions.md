@@ -52,12 +52,6 @@ Normal mode is a simple, naive, implementation of Reddit without voting support.
 
 ## Insane Mode
 
-* All links can have tags. A route similar to `'tag/:tag_name'` should exist to view links filtered by a certain tag.
-* Have a dedicated leaderboard page with the top 10 users by number of upvotes on their links. (Link Karma)
-* Make it so links can only be posted once. No reposts!
-
-## Nightmare Mode
-
 * Deploy the app to [Heroku](http://heroku.com)!
   * You'll need to sign up for an [Account](https://signup.heroku.com/login).
   * There's a getting started guide for [deploying Rails apps][heroku-rails4].
@@ -67,6 +61,12 @@ Normal mode is a simple, naive, implementation of Reddit without voting support.
 [bootstrap]: https://getbootstrap.com/
 [materialize]: https://materializecss.com/
 [heroku-rails4]: https://devcenter.heroku.com/articles/getting-started-with-rails4
+
+## Nightmare Mode
+
+* All links can have tags. A route similar to `'tag/:tag_name'` should exist to view links filtered by a certain tag.
+* Have a dedicated leaderboard page with the top 10 users by number of upvotes on their links. (Link Karma)
+* Make it so links can only be posted once. No reposts!
 
 ## Super Nightmare Mode
 
