@@ -13,7 +13,6 @@ DELETE /login  # remove user id from session
 GET /links/new # show the form for a new link
 POST /links    # the form action for new link, creates a link (if logged in)
 GET /link/:id  # takes you to the thing it links to
-DELETE /link/:id # delete a link that i own
 
 ## Comments
 GET /link/:id/comments  # get the page for a link, its comments, and comment form

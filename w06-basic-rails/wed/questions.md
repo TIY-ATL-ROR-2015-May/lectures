@@ -36,14 +36,15 @@ After completing this assignment, you should be comfortable:
 Normal mode is a simple, naive, implementation of Reddit without voting support.
 
 * Users can sign up and login.
-* Logged in users can post links and add comments.
-  * Users can delete *their* links or comments.
+* Logged in users can post links.
+* Logged in users can add comments.
 * All users can see links on the homepage and their comments, ordered by how recent they are.
 * Clicking on a link takes you to the thing it links to,
   clicking on comments takes you to a dedicated page for viewing and adding comments, just like reddit.
 
 ## Hard Mode
 
+* Users can delete *their* links and comments.
 * Users can vote on each link exactly once and votes have a value of -1 or +1.
 * Links are ordered by some combination of how recent they are and how many points they have.
 * Add pagination to the app with [kaminari][kaminari].
