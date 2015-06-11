@@ -1,0 +1,1557 @@
+➜  projects  who
+Brit
+➜  projects  rails new shortr
+      create  
+      create  README.rdoc
+      create  Rakefile
+      create  config.ru
+      create  .gitignore
+      create  Gemfile
+      create  app
+      create  app/assets/javascripts/application.js
+      create  app/assets/stylesheets/application.css
+      create  app/controllers/application_controller.rb
+      create  app/helpers/application_helper.rb
+      create  app/views/layouts/application.html.erb
+      create  app/assets/images/.keep
+      create  app/mailers/.keep
+      create  app/models/.keep
+      create  app/controllers/concerns/.keep
+      create  app/models/concerns/.keep
+      create  bin
+      create  bin/bundle
+      create  bin/rails
+      create  bin/rake
+      create  bin/setup
+      create  config
+      create  config/routes.rb
+      create  config/application.rb
+      create  config/environment.rb
+      create  config/secrets.yml
+      create  config/environments
+      create  config/environments/development.rb
+      create  config/environments/production.rb
+      create  config/environments/test.rb
+      create  config/initializers
+      create  config/initializers/assets.rb
+      create  config/initializers/backtrace_silencers.rb
+      create  config/initializers/cookies_serializer.rb
+      create  config/initializers/filter_parameter_logging.rb
+      create  config/initializers/inflections.rb
+      create  config/initializers/mime_types.rb
+      create  config/initializers/session_store.rb
+      create  config/initializers/wrap_parameters.rb
+      create  config/locales
+      create  config/locales/en.yml
+      create  config/boot.rb
+      create  config/database.yml
+      create  db
+      create  db/seeds.rb
+      create  lib
+      create  lib/tasks
+      create  lib/tasks/.keep
+      create  lib/assets
+      create  lib/assets/.keep
+      create  log
+      create  log/.keep
+      create  public
+      create  public/404.html
+      create  public/422.html
+      create  public/500.html
+      create  public/favicon.ico
+      create  public/robots.txt
+      create  test/fixtures
+      create  test/fixtures/.keep
+      create  test/controllers
+      create  test/controllers/.keep
+      create  test/mailers
+      create  test/mailers/.keep
+      create  test/models
+      create  test/models/.keep
+      create  test/helpers
+      create  test/helpers/.keep
+      create  test/integration
+      create  test/integration/.keep
+      create  test/test_helper.rb
+      create  tmp/cache
+      create  tmp/cache/assets
+      create  vendor/assets/javascripts
+      create  vendor/assets/javascripts/.keep
+      create  vendor/assets/stylesheets
+      create  vendor/assets/stylesheets/.keep
+         run  bundle install
+Fetching gem metadata from https://rubygems.org/............
+Fetching additional metadata from https://rubygems.org/..
+Resolving dependencies...
+Using rake 10.4.2
+Using i18n 0.7.0
+Using json 1.8.3
+Using minitest 5.7.0
+Using thread_safe 0.3.5
+Using tzinfo 1.2.2
+Using activesupport 4.2.1
+Using builder 3.2.2
+Using erubis 2.7.0
+Using mini_portile 0.6.2
+Using nokogiri 1.6.6.2
+Using rails-deprecated_sanitizer 1.0.3
+Using rails-dom-testing 1.0.6
+Using loofah 2.0.2
+Using rails-html-sanitizer 1.0.2
+Using actionview 4.2.1
+Using rack 1.6.1
+Using rack-test 0.6.3
+Using actionpack 4.2.1
+Using globalid 0.3.5
+Using activejob 4.2.1
+Using mime-types 2.6.1
+Using mail 2.6.3
+Using actionmailer 4.2.1
+Using activemodel 4.2.1
+Using arel 6.0.0
+Using activerecord 4.2.1
+Using debug_inspector 0.0.2
+Using binding_of_caller 0.7.2
+Using bundler 1.7.9
+Using columnize 0.9.0
+Using byebug 5.0.0
+Using coffee-script-source 1.9.1.1
+Using execjs 2.5.2
+Using coffee-script 2.4.1
+Using thor 0.19.1
+Using railties 4.2.1
+Using coffee-rails 4.1.0
+Installing multi_json 1.11.1
+Using jbuilder 2.2.16
+Using jquery-rails 4.0.3
+Using sprockets 3.2.0
+Using sprockets-rails 2.3.1
+Using rails 4.2.1
+Using rdoc 4.2.0
+Using sass 3.4.14
+Using tilt 1.4.1
+Using sass-rails 5.0.3
+Using sdoc 0.4.1
+Using spring 1.3.6
+Using sqlite3 1.3.10
+Using turbolinks 2.5.3
+Using uglifier 2.7.1
+Using web-console 2.1.2
+Your bundle is complete!
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+         run  bundle exec spring binstub --all
+* bin/rake: spring inserted
+* bin/rails: spring inserted
+➜  projects  cd shortr
+➜  shortr  git status
+fatal: Not a git repository (or any of the parent directories): .git
+➜  shortr  git init 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+➜  shortr  git init 
+Initialized empty Git repository in /Users/brit/projects/ironyard/2015-may/projects/shortr/.git/
+➜  shortr git:(master) ✗ git add .
+➜  shortr git:(master) ✗ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   .gitignore
+	new file:   Gemfile
+	new file:   Gemfile.lock
+	new file:   README.rdoc
+	new file:   Rakefile
+	new file:   app/assets/images/.keep
+	new file:   app/assets/javascripts/application.js
+	new file:   app/assets/stylesheets/application.css
+	new file:   app/controllers/application_controller.rb
+	new file:   app/controllers/concerns/.keep
+	new file:   app/helpers/application_helper.rb
+	new file:   app/mailers/.keep
+	new file:   app/models/.keep
+	new file:   app/models/concerns/.keep
+	new file:   app/views/layouts/application.html.erb
+	new file:   bin/bundle
+	new file:   bin/rails
+	new file:   bin/rake
+	new file:   bin/setup
+	new file:   bin/spring
+	new file:   config.ru
+	new file:   config/application.rb
+	new file:   config/boot.rb
+	new file:   config/database.yml
+	new file:   config/environment.rb
+	new file:   config/environments/development.rb
+	new file:   config/environments/production.rb
+	new file:   config/environments/test.rb
+	new file:   config/initializers/assets.rb
+	new file:   config/initializers/backtrace_silencers.rb
+	new file:   config/initializers/cookies_serializer.rb
+	new file:   config/initializers/filter_parameter_logging.rb
+	new file:   config/initializers/inflections.rb
+	new file:   config/initializers/mime_types.rb
+	new file:   config/initializers/session_store.rb
+	new file:   config/initializers/wrap_parameters.rb
+	new file:   config/locales/en.yml
+	new file:   config/routes.rb
+	new file:   config/secrets.yml
+	new file:   db/seeds.rb
+	new file:   lib/assets/.keep
+	new file:   lib/tasks/.keep
+	new file:   log/.keep
+	new file:   public/404.html
+	new file:   public/422.html
+	new file:   public/500.html
+	new file:   public/favicon.ico
+	new file:   public/robots.txt
+	new file:   test/controllers/.keep
+	new file:   test/fixtures/.keep
+	new file:   test/helpers/.keep
+	new file:   test/integration/.keep
+	new file:   test/mailers/.keep
+	new file:   test/models/.keep
+	new file:   test/test_helper.rb
+	new file:   vendor/assets/javascripts/.keep
+	new file:   vendor/assets/stylesheets/.keep
+
+➜  shortr git:(master) ✗ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+➜  shortr git:(master) ✗ git commit -m 'First commit.'  
+[master (root-commit) 6ea0a61] First commit.
+ 57 files changed, 977 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 Gemfile
+ create mode 100644 Gemfile.lock
+ create mode 100644 README.rdoc
+ create mode 100644 Rakefile
+ create mode 100644 app/assets/images/.keep
+ create mode 100644 app/assets/javascripts/application.js
+ create mode 100644 app/assets/stylesheets/application.css
+ create mode 100644 app/controllers/application_controller.rb
+ create mode 100644 app/controllers/concerns/.keep
+ create mode 100644 app/helpers/application_helper.rb
+ create mode 100644 app/mailers/.keep
+ create mode 100644 app/models/.keep
+ create mode 100644 app/models/concerns/.keep
+ create mode 100644 app/views/layouts/application.html.erb
+ create mode 100755 bin/bundle
+ create mode 100755 bin/rails
+ create mode 100755 bin/rake
+ create mode 100755 bin/setup
+ create mode 100755 bin/spring
+ create mode 100644 config.ru
+ create mode 100644 config/application.rb
+ create mode 100644 config/boot.rb
+ create mode 100644 config/database.yml
+ create mode 100644 config/environment.rb
+ create mode 100644 config/environments/development.rb
+ create mode 100644 config/environments/production.rb
+ create mode 100644 config/environments/test.rb
+ create mode 100644 config/initializers/assets.rb
+ create mode 100644 config/initializers/backtrace_silencers.rb
+ create mode 100644 config/initializers/cookies_serializer.rb
+ create mode 100644 config/initializers/filter_parameter_logging.rb
+ create mode 100644 config/initializers/inflections.rb
+ create mode 100644 config/initializers/mime_types.rb
+ create mode 100644 config/initializers/session_store.rb
+ create mode 100644 config/initializers/wrap_parameters.rb
+ create mode 100644 config/locales/en.yml
+ create mode 100644 config/routes.rb
+ create mode 100644 config/secrets.yml
+ create mode 100644 db/seeds.rb
+ create mode 100644 lib/assets/.keep
+ create mode 100644 lib/tasks/.keep
+ create mode 100644 log/.keep
+ create mode 100644 public/404.html
+ create mode 100644 public/422.html
+ create mode 100644 public/500.html
+ create mode 100644 public/favicon.ico
+ create mode 100644 public/robots.txt
+ create mode 100644 test/controllers/.keep
+ create mode 100644 test/fixtures/.keep
+ create mode 100644 test/helpers/.keep
+ create mode 100644 test/integration/.keep
+ create mode 100644 test/mailers/.keep
+ create mode 100644 test/models/.keep
+ create mode 100644 test/test_helper.rb
+ create mode 100644 vendor/assets/javascripts/.keep
+ create mode 100644 vendor/assets/stylesheets/.keep
+➜  shortr git:(master) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+➜  shortr git:(master) who         
+Brit
+➜  shortr git:(master) export REPO=TIY-ATL-ROR-2015-May
+➜  shortr git:(master) echo $REPO
+TIY-ATL-ROR-2015-May
+➜  shortr git:(master) alias repo='echo $REPO'
+➜  shortr git:(master) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+➜  shortr git:(master) clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+➜  shortr git:(master) who
+Brit
+➜  shortr git:(master) repo
+TIY-ATL-ROR-2015-May
+➜  shortr git:(master) echo $REPO
+TIY-ATL-ROR-2015-May
+➜  shortr git:(master) echo $WHO_DAT
+Brit
+➜  shortr git:(master) clear
+
+
+
+
+
+
+
+
+
+                                                         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+➜  shortr git:(master) git remote add origin git@github.com:TIY-ATL-ROR-2015-May/shortr.git
+➜  shortr git:(master) git push -u origin master
+Counting objects: 64, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (53/53), done.
+Writing objects: 100% (64/64), 16.44 KiB | 0 bytes/s, done.
+Total 64 (delta 2), reused 0 (delta 0)
+To git@github.com:TIY-ATL-ROR-2015-May/shortr.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+➜  shortr git:(master)         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+➜  shortr git:(master) who
+Brit
+➜  shortr git:(master) git remote -v
+origin	git@github.com:TIY-ATL-ROR-2015-May/shortr.git (fetch)
+origin	git@github.com:TIY-ATL-ROR-2015-May/shortr.git (push)
+➜  shortr git:(master) clear
+
+
+
+
+
+
+
+
+
+
+                                                         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+➜  shortr git:(master) git remote -v
+origin	git@github.com:TIY-ATL-ROR-2015-May/shortr.git (fetch)
+origin	git@github.com:TIY-ATL-ROR-2015-May/shortr.git (push)
+➜  shortr git:(master) who          
+Brit
+➜  shortr git:(master) who
+Brit
+➜  shortr git:(master) who
+Brit
+➜  shortr git:(master) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+➜  shortr git:(master) git log
+➜  shortr git:(master) git checkout -b user
+Switched to a new branch 'user'
+➜  shortr git:(user) rails g model User email:string password:string username:string
+      invoke  active_record
+      create    db/migrate/20150611150939_create_users.rb
+      create    app/models/user.rb
+      invoke    test_unit
+      create      test/models/user_test.rb
+      create      test/fixtures/users.yml
+➜  shortr git:(user) ✗ rake db:migrate
+== 20150611150939 CreateUsers: migrating ======================================
+-- create_table(:users)
+   -> 0.0012s
+== 20150611150939 CreateUsers: migrated (0.0013s) =============================
+
+➜  shortr git:(user) ✗ git status
+On branch user
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	app/models/user.rb
+	db/migrate/
+	db/schema.rb
+	test/fixtures/users.yml
+	test/models/user_test.rb
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  shortr git:(user) ✗ git add .
+➜  shortr git:(user) ✗ git commit -m 'Added user model and migrated.'
+[user a62fad5] Added user model and migrated.
+ 5 files changed, 55 insertions(+)
+ create mode 100644 app/models/user.rb
+ create mode 100644 db/migrate/20150611150939_create_users.rb
+ create mode 100644 db/schema.rb
+ create mode 100644 test/fixtures/users.yml
+ create mode 100644 test/models/user_test.rb
+➜  shortr git:(user) git push
+fatal: The current branch user has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin user
+
+➜  shortr git:(user) git push -u origin user
+Counting objects: 14, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (14/14), 1.83 KiB | 0 bytes/s, done.
+Total 14 (delta 3), reused 0 (delta 0)
+To git@github.com:TIY-ATL-ROR-2015-May/shortr.git
+ * [new branch]      user -> user
+Branch user set up to track remote branch user from origin.
+➜  shortr git:(user) git status
+On branch user
+Your branch is up-to-date with 'origin/user'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   config/routes.rb
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  shortr git:(user) ✗ git add config/routes.rb 
+➜  shortr git:(user) ✗ git commit -m 'Design basic routes for users.'
+[user 2deb138] Design basic routes for users.
+ 1 file changed, 7 insertions(+)
+➜  shortr git:(user) rails s
+=> Booting WEBrick
+=> Rails 4.2.1 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2015-06-11 11:19:20] INFO  WEBrick 1.3.1
+[2015-06-11 11:19:20] INFO  ruby 2.1.5 (2014-11-13) [x86_64-darwin14.0]
+[2015-06-11 11:19:20] INFO  WEBrick::HTTPServer#start: pid=37153 port=3000
+
+
+Started GET "/users/new" for ::1 at 2015-06-11 11:19:31 -0400
+  ActiveRecord::SchemaMigration Load (0.7ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+
+ActionController::RoutingError (uninitialized constant UsersController):
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.1) lib/rack/etag.rb:24:in `call'
+  rack (1.6.1) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.1) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/brit/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/brit/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/brit/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.7ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (12.9ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (66.0ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (23.7ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (57.3ms)
+
+
+Started GET "/users/new" for ::1 at 2015-06-11 11:21:09 -0400
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template users/new, application/new with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/brit/projects/ironyard/2015-may/projects/shortr/app/views"
+):
+  app/controllers/users_controller.rb:4:in `new'
+
+
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (26.1ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (16.2ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (38.9ms)
+^C[2015-06-11 11:23:15] INFO  going to shutdown ...
+[2015-06-11 11:23:15] INFO  WEBrick::HTTPServer#start done.
+Exiting
+➜  shortr git:(user) ✗ rake routes
+       Prefix Verb   URI Pattern              Controller#Action
+    users_new GET    /users/new(.:format)     users#new
+        users POST   /users(.:format)         users#create
+  users_login GET    /users/login(.:format)   sessions#login
+users_session POST   /users/session(.:format) sessions#create
+              DELETE /users/session(.:format) sessions#destroy
+➜  shortr git:(user) ✗ rails s
+=> Booting WEBrick
+=> Rails 4.2.1 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2015-06-11 11:28:06] INFO  WEBrick 1.3.1
+[2015-06-11 11:28:06] INFO  ruby 2.1.5 (2014-11-13) [x86_64-darwin14.0]
+[2015-06-11 11:28:06] INFO  WEBrick::HTTPServer#start: pid=37337 port=3000
+
+
+Started GET "/users/new" for ::1 at 2015-06-11 11:28:11 -0400
+  ActiveRecord::SchemaMigration Load (0.1ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/brit/projects/ironyard/2015-may/projects/shortr/app/views/users/new.html.erb:16: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/Users/brit/projects/ironyard/2015-may/projects/shortr/app/views/users/new.html.erb:18: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/brit/projects/ironyard/2015-may/projects/shortr/app/views/users/new.html.erb:20: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/users/new.html.erb:16: syntax error, unexpected keyword_end, expecting ')'
+  app/views/users/new.html.erb:18: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/users/new.html.erb:20: syntax error, unexpected keyword_end, expecting ')'
+  app/controllers/users_controller.rb:4:in `new'
+
+
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.7ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (24.1ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (54.1ms)
+
+
+Started GET "/users/new" for ::1 at 2015-06-11 11:29:44 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/brit/projects/ironyard/2015-may/projects/shortr/app/views/users/new.html.erb:16: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/Users/brit/projects/ironyard/2015-may/projects/shortr/app/views/users/new.html.erb:18: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/brit/projects/ironyard/2015-may/projects/shortr/app/views/users/new.html.erb:20: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/users/new.html.erb:16: syntax error, unexpected keyword_end, expecting ')'
+  app/views/users/new.html.erb:18: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/users/new.html.erb:20: syntax error, unexpected keyword_end, expecting ')'
+  app/controllers/users_controller.rb:4:in `new'
+
+
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.4ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (18.5ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (39.7ms)
+
+
+Started GET "/users/new" for ::1 at 2015-06-11 11:29:55 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/brit/projects/ironyard/2015-may/projects/shortr/app/views/users/new.html.erb:16: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/Users/brit/projects/ironyard/2015-may/projects/shortr/app/views/users/new.html.erb:18: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/brit/projects/ironyard/2015-may/projects/shortr/app/views/users/new.html.erb:20: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/users/new.html.erb:16: syntax error, unexpected keyword_end, expecting ')'
+  app/views/users/new.html.erb:18: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/users/new.html.erb:20: syntax error, unexpected keyword_end, expecting ')'
+  app/controllers/users_controller.rb:4:in `new'
+
+
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.4ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.1ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (18.3ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (37.9ms)
+
+
+Started GET "/users/new" for ::1 at 2015-06-11 11:30:39 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 1875ms (Views: 1874.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-06-11 11:30:41 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-11 11:30:41 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-11 11:30:41 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-06-11 11:30:41 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-11 11:30:41 -0400
+
+
+Started POST "/users" for ::1 at 2015-06-11 11:31:24 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GapK7hWOvhdgylr8E6FqMQVIqB8PejUFmfYqJoeFJlY0X/QSwm+/IF8jSp0i47GOvSsI47sth8/A8Mr3QUOHJQ==", "email"=>"brit@lies.com", "password"=>"[FILTERED]", "commit"=>"Register!"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `pry' for #<Binding:0x007f8427bdf1c0>):
+  app/controllers/users_controller.rb:8:in `create'
+
+
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.0ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (15.2ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (35.2ms)
+^C[2015-06-11 11:32:02] INFO  going to shutdown ...
+[2015-06-11 11:32:02] INFO  WEBrick::HTTPServer#start done.
+Exiting
+➜  shortr git:(user) ✗ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+➜  shortr git:(user) ✗ bundle
+Using rake 10.4.2
+Using i18n 0.7.0
+Using json 1.8.3
+Using minitest 5.7.0
+Using thread_safe 0.3.5
+Using tzinfo 1.2.2
+Using activesupport 4.2.1
+Using builder 3.2.2
+Using erubis 2.7.0
+Using mini_portile 0.6.2
+Using nokogiri 1.6.6.2
+Using rails-deprecated_sanitizer 1.0.3
+Using rails-dom-testing 1.0.6
+Using loofah 2.0.2
+Using rails-html-sanitizer 1.0.2
+Using actionview 4.2.1
+Using rack 1.6.1
+Using rack-test 0.6.3
+Using actionpack 4.2.1
+Using globalid 0.3.5
+Using activejob 4.2.1
+Using mime-types 2.6.1
+Using mail 2.6.3
+Using actionmailer 4.2.1
+Using activemodel 4.2.1
+Using arel 6.0.0
+Using activerecord 4.2.1
+Using debug_inspector 0.0.2
+Using binding_of_caller 0.7.2
+Using columnize 0.9.0
+Using byebug 5.0.0
+Using coderay 1.1.0
+Using coffee-script-source 1.9.1.1
+Using execjs 2.5.2
+Using coffee-script 2.4.1
+Using thor 0.19.1
+Using railties 4.2.1
+Using coffee-rails 4.1.0
+Using multi_json 1.11.1
+Using jbuilder 2.2.16
+Using jquery-rails 4.0.3
+Using method_source 0.8.2
+Using slop 3.6.0
+Using pry 0.10.1
+Using bundler 1.7.9
+Using sprockets 3.2.0
+Using sprockets-rails 2.3.1
+Using rails 4.2.1
+Using rdoc 4.2.0
+Using sass 3.4.14
+Using tilt 1.4.1
+Using sass-rails 5.0.3
+Using sdoc 0.4.1
+Using spring 1.3.6
+Using sqlite3 1.3.10
+Using turbolinks 2.5.3
+Using uglifier 2.7.1
+Using web-console 2.1.2
+Your bundle is complete!
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+➜  shortr git:(user) ✗ git status
+On branch user
+Your branch is ahead of 'origin/user' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Gemfile
+	modified:   Gemfile.lock
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	app/controllers/users_controller.rb
+	app/views/users/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  shortr git:(user) ✗ git add Gemfile Gemfile.lock
+➜  shortr git:(user) ✗ git commit -m 'Add pry to gemfile.'
+[user ae3fa40] Add pry to gemfile.
+ 2 files changed, 10 insertions(+)
+➜  shortr git:(user) ✗ rails s
+=> Booting WEBrick
+=> Rails 4.2.1 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2015-06-11 11:32:36] INFO  WEBrick 1.3.1
+[2015-06-11 11:32:36] INFO  ruby 2.1.5 (2014-11-13) [x86_64-darwin14.0]
+[2015-06-11 11:32:36] INFO  WEBrick::HTTPServer#start: pid=37543 port=3000
+
+
+Started POST "/users" for ::1 at 2015-06-11 11:32:57 -0400
+  ActiveRecord::SchemaMigration Load (0.2ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GapK7hWOvhdgylr8E6FqMQVIqB8PejUFmfYqJoeFJlY0X/QSwm+/IF8jSp0i47GOvSsI47sth8/A8Mr3QUOHJQ==", "email"=>"brit@lies.com", "password"=>"[FILTERED]", "commit"=>"Register!"}
+
+From: /Users/brit/projects/ironyard/2015-may/projects/shortr/app/controllers/users_controller.rb @ line 8 UsersController#create:
+
+     7: def create
+ =>  8:   binding.pry
+     9:   # @user = User.create(params???)
+    10:   redirect_to :root
+    11: end
+
+[1] pry(#<UsersController>)> User.create(email: params[:email], password: params[:password])
+[1] pry(#<UsersController>)> u = User.new(email: params[:email], password: params[:password])
+
+=> #<User:0x007f9cfca64730
+ id: nil,
+ email: "brit@lies.com",
+ password: "password",
+ username: nil,
+ created_at: nil,
+ updated_at: nil>
+[2] pry(#<UsersController>)> u.password
+=> "password"
+[3] pry(#<UsersController>)> Digest::SHA1.hexdigest("pass")
+
+=> "9d4e1e23bd5b727046a9e3b4b7db57bd8d6ee684"
+[4] pry(#<UsersController>)> 
+
+[4] pry(#<UsersController>)> Digest::SHA1.hexdigest("pass")
+
+=> "9d4e1e23bd5b727046a9e3b4b7db57bd8d6ee684"
+[5] pry(#<UsersController>)> Digest::SHA1.hexdigest("past")
+
+=> "dc52f279269d00ddcc22b2e6bb47a812c140dfdc"
+[6] pry(#<UsersController>)> Digest::SHA1.hexdigest("pass")
+
+=> "9d4e1e23bd5b727046a9e3b4b7db57bd8d6ee684"
+[7] pry(#<UsersController>)> ^D
+Redirected to 
+Completed 500 Internal Server Error in 342169ms (ActiveRecord: 0.6ms)
+
+NoMethodError (undefined method `root_url' for #<UsersController:0x007f9cfe249bc0>):
+  app/controllers/users_controller.rb:10:in `create'
+
+
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.2ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (24.9ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (50.0ms)
+
+
+Started POST "/users" for ::1 at 2015-06-11 11:43:29 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GapK7hWOvhdgylr8E6FqMQVIqB8PejUFmfYqJoeFJlY0X/QSwm+/IF8jSp0i47GOvSsI47sth8/A8Mr3QUOHJQ==", "email"=>"brit@lies.com", "password"=>"[FILTERED]", "commit"=>"Register!"}
+   (0.1ms)  begin transaction
+  SQL (1.4ms)  INSERT INTO "users" ("email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "brit@lies.com"], ["password", "5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8"], ["created_at", "2015-06-11 15:43:29.878057"], ["updated_at", "2015-06-11 15:43:29.878057"]]
+   (3.9ms)  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 23ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/" for ::1 at 2015-06-11 11:43:29 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 301ms (Views: 299.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-11 11:43:30 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-06-11 11:43:30 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-11 11:43:30 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-11 11:43:30 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-06-11 11:43:30 -0400
+^C[2015-06-11 11:45:12] INFO  going to shutdown ...
+[2015-06-11 11:45:12] INFO  WEBrick::HTTPServer#start done.
+Exiting
+➜  shortr git:(user) ✗ git status
+On branch user
+Your branch is ahead of 'origin/user' by 2 commits.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   config/routes.rb
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	app/controllers/users_controller.rb
+	app/views/users/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  shortr git:(user) ✗ git add config/routes.rb git add app/controllers/users_controller.rb app
+➜  shortr git:(user) ✗ git add .
+➜  shortr git:(user) ✗            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+➜  shortr git:(user) ✗ git commit -m 'Add user registration and root route.'
+[user 9902ec3] Add user registration and root route.
+ 4 files changed, 38 insertions(+)
+ create mode 100644 app/controllers/users_controller.rb
+ create mode 100644 app/views/users/index.html.erb
+ create mode 100644 app/views/users/new.html.erb
+➜  shortr git:(user) git push
+Counting objects: 19, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (19/19), 2.09 KiB | 0 bytes/s, done.
+Total 19 (delta 10), reused 0 (delta 0)
+To git@github.com:TIY-ATL-ROR-2015-May/shortr.git
+   a62fad5..9902ec3  user -> user
+➜  shortr git:(user) rails s
+=> Booting WEBrick
+=> Rails 4.2.1 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2015-06-11 11:46:09] INFO  WEBrick 1.3.1
+[2015-06-11 11:46:09] INFO  ruby 2.1.5 (2014-11-13) [x86_64-darwin14.0]
+[2015-06-11 11:46:09] INFO  WEBrick::HTTPServer#start: pid=37745 port=3000
+
+
+Started GET "/users/new" for ::1 at 2015-06-11 11:46:20 -0400
+  ActiveRecord::SchemaMigration Load (0.2ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 239ms (Views: 230.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-06-11 11:46:20 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-11 11:46:20 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-11 11:46:20 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-11 11:46:20 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-06-11 11:46:20 -0400
+^C[2015-06-11 11:56:26] INFO  going to shutdown ...
+[2015-06-11 11:56:26] INFO  WEBrick::HTTPServer#start done.
+Exiting
+➜  shortr git:(user) ✗ rake routes
+       Prefix Verb   URI Pattern              Controller#Action
+         root GET    /                        users#index
+    users_new GET    /users/new(.:format)     users#new
+        users POST   /users(.:format)         users#create
+  users_login GET    /users/login(.:format)   sessions#login
+users_session POST   /users/session(.:format) sessions#create
+              DELETE /users/session(.:format) sessions#destroy
+➜  shortr git:(user) ✗ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+➜  shortr git:(user) ✗ git status
+On branch user
+Your branch is up-to-date with 'origin/user'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   app/controllers/users_controller.rb
+	modified:   app/views/users/new.html.erb
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	app/controllers/sessions_controller.rb
+	app/views/sessions/
+	app/views/users/_form.html.erb
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  shortr git:(user) ✗ rake routes
+       Prefix Verb   URI Pattern              Controller#Action
+         root GET    /                        users#index
+    users_new GET    /users/new(.:format)     users#new
+        users POST   /users(.:format)         users#create
+  users_login GET    /users/login(.:format)   sessions#login
+users_session POST   /users/session(.:format) sessions#create
+              DELETE /users/session(.:format) sessions#destroy
+➜  shortr git:(user) ✗ rails s
+=> Booting WEBrick
+=> Rails 4.2.1 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2015-06-11 12:00:22] INFO  WEBrick 1.3.1
+[2015-06-11 12:00:22] INFO  ruby 2.1.5 (2014-11-13) [x86_64-darwin14.0]
+[2015-06-11 12:00:22] INFO  WEBrick::HTTPServer#start: pid=38096 port=3000
+
+
+Started GET "/users/login" for ::1 at 2015-06-11 12:00:45 -0400
+  ActiveRecord::SchemaMigration Load (0.5ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by SessionsController#login as HTML
+  Rendered users/_form.html.erb (1.0ms)
+  Rendered sessions/login.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 237ms (Views: 227.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/session" for ::1 at 2015-06-11 12:00:59 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aI1Pw0DQNjN+qrP8WZFgB9Idnm8jouUf6heeDOxXmRdFePE/lzE3BEFDo51o07u4an4+k5f1V9WzEX7dKpE4ZA==", "email"=>"brit@lies.com", "password"=>"[FILTERED]", "commit"=>"Register!"}
+
+From: /Users/brit/projects/ironyard/2015-may/projects/shortr/app/controllers/sessions_controller.rb @ line 9 SessionsController#create:
+
+     8: def create
+ =>  9:   binding.pry
+    10: end
+
+[1] pry(#<SessionsController>)> @user = User.find_by(password: 
+[1] pry(#<SessionsController>)> params
+=> {"utf8"=>"✓",
+ "authenticity_token"=>
+  "aI1Pw0DQNjN+qrP8WZFgB9Idnm8jouUf6heeDOxXmRdFePE/lzE3BEFDo51o07u4an4+k5f1V9WzEX7dKpE4ZA==",
+ "email"=>"brit@lies.com",
+ "password"=>"password",
+ "commit"=>"Register!",
+ "controller"=>"sessions",
+ "action"=>"create"}
+[2] pry(#<SessionsController>)> Digest::SHA1.hexdigest(params[:password])
+
+=> "5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8"
+[3] pry(#<SessionsController>)> User.find_by(password: Digest::SHA1.hexdigest(params[:password]))
+
+  User Load (0.6ms)  SELECT  "users".* FROM "users" WHERE "users"."password" = ? LIMIT 1  [["password", "5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8"]]
+=> #<User:0x007fd541013b78
+ id: 1,
+ email: "brit@lies.com",
+ password: "5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8",
+ username: nil,
+ created_at: Thu, 11 Jun 2015 15:43:29 UTC +00:00,
+ updated_at: Thu, 11 Jun 2015 15:43:29 UTC +00:00>
+[4] pry(#<SessionsController>)> 
+[4] pry(#<SessionsController>)> User.find_by(password: Digest::SHA1.hexdigest(params[:password]))
+
+  CACHE (0.0ms)  SELECT  "users".* FROM "users" WHERE "users"."password" = ? LIMIT 1  [["password", "5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8"]]
+=> #<User:0x007fd53b3b5138
+ id: 1,
+ email: "brit@lies.com",
+ password: "5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8",
+ username: nil,
+ created_at: Thu, 11 Jun 2015 15:43:29 UTC +00:00,
+ updated_at: Thu, 11 Jun 2015 15:43:29 UTC +00:00>
+[5] pry(#<SessionsController>)> @user = User.find_by(password: Digest::SHA1.hexdigest(params[:password]))
+
+  CACHE (0.0ms)  SELECT  "users".* FROM "users" WHERE "users"."password" = ? LIMIT 1  [["password", "5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8"]]
+=> #<User:0x007fd540a61f68
+ id: 1,
+ email: "brit@lies.com",
+ password: "5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8",
+ username: nil,
+ created_at: Thu, 11 Jun 2015 15:43:29 UTC +00:00,
+ updated_at: Thu, 11 Jun 2015 15:43:29 UTC +00:00>
+[6] pry(#<SessionsController>)> ^D
+Completed 500 Internal Server Error in 792331ms (ActiveRecord: 1.3ms)
+
+ActionView::MissingTemplate (Missing template sessions/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/brit/projects/ironyard/2015-may/projects/shortr/app/views"
+):
+  actionview (4.2.1) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.1) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.1) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/brit/.rbenv/versions/2.1.5/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_process_action_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.1) lib/rack/etag.rb:24:in `call'
+  rack (1.6.1) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.1) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/brit/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/brit/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/brit/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (70.5ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (94.1ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (28.6ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/brit/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (63.7ms)
+^C[2015-06-11 12:14:12] INFO  going to shutdown ...
+[2015-06-11 12:14:12] INFO  WEBrick::HTTPServer#start done.
+Exiting
+➜  shortr git:(user) ✗ git status
+On branch user
+Your branch is up-to-date with 'origin/user'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   app/controllers/users_controller.rb
+	modified:   app/views/users/new.html.erb
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	app/controllers/sessions_controller.rb
+	app/views/sessions/
+	app/views/users/_form.html.erb
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  shortr git:(user) ✗ git add app/controllers/    
+➜  shortr git:(user) ✗ git add app/views/
+➜  shortr git:(user) ✗ git commit -m 'Add sessions controller and login system.'
+[user 448f174] Add sessions controller and login system.
+ 5 files changed, 44 insertions(+), 14 deletions(-)
+ create mode 100644 app/controllers/sessions_controller.rb
+ create mode 100644 app/views/sessions/login.html.erb
+ create mode 100644 app/views/users/_form.html.erb
+➜  shortr git:(user) git push
+Counting objects: 12, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (12/12), 1.44 KiB | 0 bytes/s, done.
+Total 12 (delta 3), reused 0 (delta 0)
+To git@github.com:TIY-ATL-ROR-2015-May/shortr.git
+   9902ec3..448f174  user -> user
+➜  shortr git:(user) who
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+➜  shortr git:(user) who
+Brit
+➜  shortr git:(user) git push
+Everything up-to-date
+➜  shortr git:(user) clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+➜  shortr git:(user) who
+Brit
+➜  shortr git:(user) repo
+TIY-ATL-ROR-2015-May
+➜  shortr git:(user) who
+Brit
+➜  shortr git:(user) git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+➜  shortr git:(master) git pull
+remote: Counting objects: 50, done.
+remote: Compressing objects: 100% (39/39), done.
+remote: Total 50 (delta 30), reused 30 (delta 10), pack-reused 0
+Unpacking objects: 100% (50/50), done.
+From github.com:TIY-ATL-ROR-2015-May/shortr
+   6ea0a61..c898d9d  master     -> origin/master
+Updating 6ea0a61..c898d9d
+Fast-forward
+ Gemfile                                |  2 +
+ Gemfile.lock                           |  8 ++++
+ app/controllers/links_controller.rb    |  6 +++
+ app/controllers/sessions_controller.rb | 25 +++++++++++
+ app/controllers/users_controller.rb    | 20 +++++++++
+ app/models/link.rb                     | 19 ++++++++
+ app/models/user.rb                     |  2 +
+ app/views/sessions/login.html.erb      |  3 ++
+ app/views/users/_form.html.erb         | 14 ++++++
+ app/views/users/index.html.erb         |  1 +
+ app/views/users/new.html.erb           |  3 ++
+ config/routes.rb                       | 11 +++++
+ .../20150611140240_create_links.rb     | 10 +++++
+ ...611140729_add_shortened_to_links.rb |  5 +++
+ .../20150611150939_create_users.rb     | 11 +++++
+ db/schema.rb                           | 32 ++++++++++++++
+ test/fixtures/links.yml                |  9 ++++
+ test/fixtures/users.yml                | 11 +++++
+ test/models/link_test.rb               |  7 +++
+ test/models/user_test.rb               |  7 +++
+ 20 files changed, 206 insertions(+)
+ create mode 100644 app/controllers/links_controller.rb
+ create mode 100644 app/controllers/sessions_controller.rb
+ create mode 100644 app/controllers/users_controller.rb
+ create mode 100644 app/models/link.rb
+ create mode 100644 app/models/user.rb
+ create mode 100644 app/views/sessions/login.html.erb
+ create mode 100644 app/views/users/_form.html.erb
+ create mode 100644 app/views/users/index.html.erb
+ create mode 100644 app/views/users/new.html.erb
+ create mode 100644 db/migrate/20150611140240_create_links.rb
+ create mode 100644 db/migrate/20150611140729_add_shortened_to_links.rb
+ create mode 100644 db/migrate/20150611150939_create_users.rb
+ create mode 100644 db/schema.rb
+ create mode 100644 test/fixtures/links.yml
+ create mode 100644 test/fixtures/users.yml
+ create mode 100644 test/models/link_test.rb
+ create mode 100644 test/models/user_test.rb
+➜  shortr git:(master) git checkout -b adding-links
+Switched to a new branch 'adding-links'
+➜  shortr git:(adding-links) 
