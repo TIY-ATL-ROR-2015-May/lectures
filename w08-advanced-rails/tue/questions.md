@@ -24,5 +24,9 @@ cross class project.
 
 * The [Rails Testing guide][testing],
   especially chapters 2 and 3 about Fixtures and Models 
+* Our commits that [add tests][tests] and get them [passing][passing]
+  from class today.
 
+[tests]: https://github.com/TIY-ATL-ROR-2015-May/swapr/commit/754d31876c49f773151b105778d72f5f9f13b2f3
+[passing]: https://github.com/TIY-ATL-ROR-2015-May/swapr/commit/29ba52bc70c8066d5c3735717dc9aa0c669db709
 [testing]: http://guides.rubyonrails.org/testing.html#available-assertions
