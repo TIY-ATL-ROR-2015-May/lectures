@@ -1,0 +1,95 @@
+<!doctype html> <html> <head> <title>Title</title> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> <style type="text/css"> @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz); @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic); @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic); body{font-family: 'Droid Serif';}h1, h2, h3{font-family: 'Yanone Kaffeesatz'; font-weight: 400; margin-bottom: 0;}.remark-slide-content h1{font-size: 3em;}.remark-slide-content h2{font-size: 2em;}.remark-slide-content h3{font-size: 1.6em;}.footnote{position: absolute; bottom: 3em;}li p{line-height: 1.25em;}.red{color: #fa0000;}.large{font-size: 2em;}a, a > code{color: rgb(249, 38, 114); text-decoration: none;}code{-moz-border-radius: 5px; -web-border-radius: 5px; background: #e7e8e2; border-radius: 5px;}.remark-code, .remark-inline-code{font-family: 'Ubuntu Mono';}.remark-code-line-highlighted{background-color: #373832;}.pull-left{float: left; width: 47%;}.pull-right{float: right; width: 47%;}.pull-right ~ p{clear: both;}#slideshow .slide .content code{font-size: 0.8em;}#slideshow .slide .content pre code{font-size: 0.9em; padding: 15px;}.inverse{background: #272822; color: #777872; text-shadow: 0 0 20px #333;}.inverse h1, .inverse h2{color: #f3f3f3; line-height: 0.8em;}#slide-inverse .footnote{bottom: 12px; left: 20px;}#slide-how .slides{font-size: 0.9em; position: absolute; top: 151px; right: 140px;}#slide-how .slides h3{margin-top: 0.2em;}#slide-how .slides .first, #slide-how .slides .second{padding: 1px 20px; height: 90px; width: 120px; -moz-box-shadow: 0 0 10px #777; -webkit-box-shadow: 0 0 10px #777; box-shadow: 0 0 10px #777;}#slide-how .slides .first{background: #fff; position: absolute; top: 20%; left: 20%; z-index: 1;}#slide-how .slides .second{position: relative; background: #fff; z-index: 0;}.left-column{color: #777; width: 20%; height: 92%; float: left;}.left-column h2:last-of-type, .left-column h3:last-child{color: #000;}.right-column{width: 75%; float: right; padding-top: 1em;} </style> </head> <body> <textarea id="source"> ### The Last Lecture?
+
+--
+
+Not sure if:
+
+![disappoint](http://mashable.com/wp-content/uploads/2013/07/Dr.-Who.gif)
+
+---
+
+### The Last Lecture?
+
+OR
+
+--
+
+![awesome](https://33.media.tumblr.com/474bb51f05a33360d70f18cbde9fd18c/tumblr_mlr7aiP4OF1r4aiyzo1_500.gif)
+
+---
+
+### Now Improv!
+
+Three things to cover:
+
+1. Why form_for and Strong Params are common in Rails apps and *good*.
+2. Why background jobs with Resque are awesome if slightly complicated.
+3. Why Resque on Heroku is actually complicated and a pain in the ass.
+
+---
+
+### New Rails Ish!
+
+#### `form_for`
+  `form_for` is great when we're actually trying to edit a *model*.
+   Groups form parameters into a hash, better naming of input ids,
+   and it prepopulates fields if the model already has been saved/has data.
+
+   The tricky part of `form_for` is that it *must* be able to autogenerate
+   the action and HTTP verb of the form _for us_. So we pass it a model or
+   array of models and it is crucial that calling `url_for([@model1, @model2])`
+   on those models gives us the right route. Otherwise, `form_for` won't know
+   what to do.
+
+--
+
+#### Virtual Attributes
+
+   Virtual attributes are also a neat trick we can use on our models.
+   If we want to work with an association for a model in a simple way,
+   it may be more convenient to define special getter and setter methods
+   for working with it than to use the associations directly.
+
+   For a good example, see [this commit][virtual-attr] from blarg,
+   which allows us to just use `tag_names` in the form for a post
+   and remove the tag management cruft from the posts_controller.
+
+[virtual-attr]: https://github.com/TIY-ATL-ROR-2015-May/blarg/commit/3441983c13896a5638f7cf0a19a47be236854a2a
+
+---
+
+### One More Rails-ism
+
+#### Strong Params
+
+   [Strong Parameters][strong-params] prevent us from a kind of
+   security flaw called the "Mass Assignment Vulnerability".
+   Mass Assignment refers to the fact that we can simply call
+   `Post.create(hash)` passing a hash of attributes to create a
+   post. This is obviously incredibly convenient.
+
+--
+
+   However, it doesn't take into account whether or not the user is
+   allowed to edit the attributes in question. I.e. A hacker could
+   craft a POST request by hand to the "Edit User" endpoint that
+   passes "admin: true" as a parameter. If our model has an admin
+   column and we naively do `@user.update(params)` or similar
+   then anyone could use this trick to make themselves an admin.
+
+--
+
+   This actually happened to [Github][github-sec], among others.
+   As a result, Rails added Strong Params in Rails 4.1 which
+   requires us to define which params are allowed to be edited in
+   the controller. See more [here][strong-params].
+
+--
+
+   **NOTE:** Just a reminder, Strong Params are only necessary when
+   we are doing "mass assignment". I.e. When we are passing a hash
+   directly to `Foo.new` or `Foo.create`.
+
+[strong-params]: http://edgeguides.rubyonrails.org/action_controller_overview.html#strong-parameters
+[github-sec]: https://github.com/blog/1068-public-key-security-vulnerability-and-mitigation
+ </textarea> <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js"> </script> <script> var slideshow = remark.create(); </script> </body> </html>
